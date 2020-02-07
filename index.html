@@ -1,79 +1,84 @@
 <html>
+
 <head>
 	<title>
-		text_classification	
+		text_classification
 	</title>
-	
-		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"></script>
-		<script src="jquery.min.js"></script>
-		<script src="typed.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="jquery.min.js"></script>
+	<script src="typed.min.js"></script>
 </head>
+
 <body>
 
-		<div class="bd-example">
-			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-		
+	<div class="bd-example">
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img src="fake.jpg" class="d-block w-100" style="height:fit-content" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h1>Hi, we are Real Life Hackers</h1> <!--add you name here after I am-->
-					<h5><span class="element"></span></h5> 
-		
+					<img src="fake.jpg" class="d-block w-100" style="height:fit-content" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h1>Hi, we are Real Life Hackers</h1>
+						<!--add you name here after I am-->
+						<h5><span class="element"></span></h5>
+
+					</div>
 				</div>
-				</div>
-			</div>
 			</div>
 		</div>
+	</div>
 
 
 
-	  <br><br>
-	
-		
-		<div style="display:flex;justify-content: center;">
+	<br><br>
+
+
+	<div style="display:flex;justify-content: center;">
 		<p style="font-size:x-large;margin-right: 8px;font-weight: bolder;">Enter Your Text</p>
-		<input style="width:70%" class="form-control form-control-lg" id="input" type="text" name="userfile" placeholder="Enter Your text">
+		<input style="width:70%" class="form-control form-control-lg" id="input" type="text" name="userfile"
+			placeholder="Enter Your text">
 
-		<button onclick="myfunction()" style="width:14%;margin-left: 3px;" type="submit" class="btn btn-dark" >Click Here</button>
-	
+		<button onclick="myfunction()" style="width:14%;margin-left: 3px;" type="submit" class="btn btn-dark">Click
+			Here</button>
+
 	</div>
 
 	<ul id="list">
-		
+
 	</ul>
 
 
 
 	<script>
 		var typed = new Typed('.element', {
-		  strings: ["Fake News", "Real News"], //ADD YOUR SKILLS 
-		  loop: true,
-		  typeSpeed: 40
+			strings: ["Fake News", "Real News"], //ADD YOUR SKILLS 
+			loop: true,
+			typeSpeed: 40
 		});
 
 
-		function myfunction(){
-            var input = document.getElementById('input');
-            var list = document.getElementById('list');
-            var str = input.value;
+		function myfunction() {
+			var input = document.getElementById('input');
+			var list = document.getElementById('list');
+			var str = input.value;
 			var arr = [-1];
 			var deadly = str.indexOf('deadly');
-			arr[1]=deadly;
+			arr[1] = deadly;
 			var screw = str.indexOf('screw');
-			arr[2]=screw;
+			arr[2] = screw;
 			var sue = str.indexOf('sue');
 			arr[3] = sue;
 			var nigga = str.indexOf('nigga');
@@ -122,38 +127,39 @@
 			arr[25] = p;
 			var q = str.indexOf('shiity');
 			arr[26] = q;
-			var pz= str.indexOf('feminist');
+			var pz = str.indexOf('feminist');
 			arr[27] = pz;
 			var pa = str.indexOf('nerd');
 			arr[28] = pa;
-			
 
-		
-			
 
-			var n=-1;
-			for(var i=0;i<arr.length;i++){
-				if(arr[i]!=-1)
-				n=1;
+
+
+
+			var n = -1;
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] != -1)
+					n = 1;
 				console.log(arr);
 			}
-            
-            if(n==1)
-            {	 var node = document.createElement("LI");
-				 var textnode = document.createTextNode("offensive");
-				 node.appendChild(textnode);
-				 document.getElementById("list").appendChild(node);
-				 node.style.color = "green"
-            }
-            else{
+
+			if (n == 1) {
 				var node = document.createElement("LI");
-  				var textnode = document.createTextNode("not offensive");
-  				node.appendChild(textnode);
-  				document.getElementById("list").appendChild(node);
+				var textnode = document.createTextNode("offensive");
+				node.appendChild(textnode);
+				document.getElementById("list").appendChild(node);
+				node.style.color = "green"
+			}
+			else {
+				var node = document.createElement("LI");
+				var textnode = document.createTextNode("not offensive");
+				node.appendChild(textnode);
+				document.getElementById("list").appendChild(node);
 				node.style.color = "blue";
 			}
-            
-            }
-	  </script>
+
+		}
+	</script>
 </body>
+
 </html>
